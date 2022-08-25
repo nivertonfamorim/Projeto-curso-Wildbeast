@@ -9,7 +9,7 @@ blockquote {
 }
 
 body {
-  font-family: "Volkorn", geogia, serif;
+  font-family: "Vollkorn", geogia, serif;
 }
 
 li {
@@ -21,7 +21,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 /* Grid Geral */
@@ -98,16 +100,30 @@ img {
 }
 
 /* Content */
-
-
 .content {
   grid-area: content;
 }
 
+/* Anuncios */
 .anuncios {
   grid-area: anuncios;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
+
 }
 
+/* Footer */
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
 }
